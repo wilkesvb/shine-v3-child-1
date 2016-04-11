@@ -1,0 +1,94 @@
+$dkgray: #555555;
+$gray: #333333;
+$medgray: #c1c1c1;
+$ltgray: #e1e1e1;
+$red: #b32018;
+$yellow: #ffc324;
+
+$papa-bear: 1050px;
+$mama-bear: 850px;
+$baby-bear: 650px;
+
+.page-template-emp-portal-home {
+	.content-wrap,
+	.page-content {
+		width: 100%;
+	}
+	.page-content {
+		padding-right: 0px;
+		padding-left: 0px;
+		section {
+			background: $ltgray;
+			padding-bottom: 10px;
+
+		}
+		.emp-sidebar {
+			float: left;
+			width: 220px;
+			padding-right: 0px;
+			a {
+				padding-left: 15px;
+			}
+			ul {
+				margin: 0;
+				padding: 15px 15px;
+				list-style-type: none;
+				li {
+					a {
+						padding-left: 0;
+						color: $gray;
+						&:hover {
+							color: $red;
+						}
+					}
+				}
+			}
+		}	
+		.emp-center {
+			float: left;
+			width: 100%;
+			max-width: 660px;
+			padding: 0px 20px;
+			section {
+				margin-top: 10px;
+				background: #ffffff;
+			}
+			h4 {
+				margin-top: 0px;
+				color: white;
+				text-transform: uppercase;
+				background: $yellow;
+			}
+			.contact {
+				float: left;
+				width: 48%;
+				margin: 0 4% 20px 0;
+				background: $ltgray;
+				&:nth-of-type(2),
+				&:nth-of-type(4),
+				&:nth-of-type(6) {
+					margin-right: 0;
+				}
+			}
+		}
+		h2, h4, p {
+			margin-bottom: 0px;
+			padding: 8px 10px;
+		}
+		h2 {
+			background: white;
+			padding-left: 0px;
+			border-bottom: 10px solid $ltgray;
+
+		}
+		h4 {
+			color: white;
+			background: $red;
+			display: block;
+		}
+		li {
+			padding: 5px 0;
+			text-indent: 0;
+		}
+	}
+}
