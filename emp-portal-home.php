@@ -49,12 +49,44 @@
 					<section>
 						<h4>Important Documents</h4>
 						<ul>
-							<li>Employee Handbook</li>
-							<li>Employee Handbook</li>
-							<li>Employee Handbook</li>
-							<li>Employee Handbook</li>
-							<li>Employee Handbook</li>
-							<li>Employee Handbook</li>
+
+							<?php 
+
+								$args = array(
+									'post_type' => 'emp-docs'
+								);
+								$query = new WP_Query( $args );
+
+							?>
+
+							<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+							
+							<li><a href="<?php the_field( 'document_link' ) ?>" target="_blank"><?php the_field( 'document_title' ) ?></a></li>
+
+							<?php endwhile; endif; wp_reset_postdata(); ?>
+
+						</ul>
+					</section>
+
+				</div>
+
+				<div class="emp-sidebar right">
+
+					<section>
+						
+						<h4>Calendar</h4>
+
+					</section>
+
+					<section>
+						<h4>APP Downloads</h4>
+						<ul>
+							<li><img src="" alt="">
+									<p>Deltek GovCon App</p>
+								</img></li>
+							<li><img src="" alt="">
+									<p>Insperity App</p>
+								</img></li>
 						</ul>
 					</section>
 
@@ -106,27 +138,7 @@
 
 				</div>
 
-				<div class="emp-sidebar">
-
-					<section>
-						
-						<h4>Calendar</h4>
-
-					</section>
-
-					<section>
-						<h4>APP Downloads</h4>
-						<ul>
-							<li><img src="" alt="">
-									<p>Deltek GovCon App</p>
-								</img></li>
-							<li><img src="" alt="">
-									<p>Insperity App</p>
-								</img></li>
-						</ul>
-					</section>
-
-				</div>
+				
 
 			</div>
 
