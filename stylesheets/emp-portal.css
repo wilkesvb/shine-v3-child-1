@@ -13,7 +13,7 @@
   /* line 25, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content .emp-sidebar {
     float: left;
-    width: 245px;
+    width: 220px;
     padding-right: 0px; }
     /* line 29, ../sass/emp-portal.scss */
     .page-template-emp-portal-home .page-content .emp-sidebar a {
@@ -33,7 +33,8 @@
   /* line 47, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content .emp-center {
     padding: 0px 20px;
-    margin: 0 245px; }
+    margin: 0 220px;
+    overflow: hidden; }
     /* line 51, ../sass/emp-portal.scss */
     .page-template-emp-portal-home .page-content .emp-center section {
       margin-top: 10px;
@@ -53,24 +54,60 @@
       /* line 68, ../sass/emp-portal.scss */
       .page-template-emp-portal-home .page-content .emp-center .contact:nth-of-type(2), .page-template-emp-portal-home .page-content .emp-center .contact:nth-of-type(4), .page-template-emp-portal-home .page-content .emp-center .contact:nth-of-type(6) {
         margin-right: 0; }
-  /* line 73, ../sass/emp-portal.scss */
+      @media screen and (1050px) {
+        /* line 61, ../sass/emp-portal.scss */
+        .page-template-emp-portal-home .page-content .emp-center .contact {
+          display: block;
+          float: none !important;
+          width: 100%; } }
+  /* line 78, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content .right {
     float: right; }
-  /* line 76, ../sass/emp-portal.scss */
+    /* line 80, ../sass/emp-portal.scss */
+    .page-template-emp-portal-home .page-content .right h5 {
+      padding: 5px;
+      font-size: 1em;
+      text-align: left; }
+    /* line 85, ../sass/emp-portal.scss */
+    .page-template-emp-portal-home .page-content .right a {
+      padding-left: 0px;
+      margin: 20px auto; }
+  /* line 90, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content h2, .page-template-emp-portal-home .page-content h4, .page-template-emp-portal-home .page-content p {
     margin-bottom: 0px;
     padding: 8px 10px; }
-  /* line 80, ../sass/emp-portal.scss */
+  /* line 94, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content h2 {
     background: white;
     padding-left: 0px;
     border-bottom: 10px solid #e1e1e1; }
-  /* line 86, ../sass/emp-portal.scss */
+  /* line 100, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content h4 {
     color: white;
     background: #b32018;
     display: block; }
-  /* line 91, ../sass/emp-portal.scss */
+  /* line 105, ../sass/emp-portal.scss */
   .page-template-emp-portal-home .page-content li {
     padding: 5px 0;
     text-indent: 0; }
+  /* line 109, ../sass/emp-portal.scss */
+  .page-template-emp-portal-home .page-content .app-logo {
+    display: block;
+    margin: 15px;
+    width: 100%;
+    height: auto !important; }
+  /* line 115, ../sass/emp-portal.scss */
+  .page-template-emp-portal-home .page-content .store-button {
+    display: inline-block;
+    float: left;
+    margin: 0 15px 15px;
+    margin-right: 0px;
+    width: 40%;
+    height: auto !important; }
+
+@media screen and (max-width: 1050px) {
+  /* line 128, ../sass/emp-portal.scss */
+  .contact {
+    float: none !important;
+    clear: both;
+    width: 100% !important; } }

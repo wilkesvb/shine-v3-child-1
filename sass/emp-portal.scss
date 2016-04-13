@@ -24,7 +24,7 @@ $baby-bear: 650px;
 		}
 		.emp-sidebar {
 			float: left;
-			width: 245px;
+			width: 220px;
 			padding-right: 0px;
 			a {
 				padding-left: 15px;
@@ -45,9 +45,9 @@ $baby-bear: 650px;
 			}
 		}	
 		.emp-center {
-			
 			padding: 0px 20px;
-			margin: 0 245px;
+			margin: 0 220px;
+			overflow: hidden;
 			section {
 				margin-top: 10px;
 				background: #ffffff;
@@ -68,10 +68,24 @@ $baby-bear: 650px;
 				&:nth-of-type(6) {
 					margin-right: 0;
 				}
+				@media screen and ($papa-bear) {
+					display: block;
+					float: none !important;
+					width:100%;
+				}
 			}
 		}
 		.right {
 			float: right;
+			h5 {
+				padding: 5px;
+				font-size: 1em;
+				text-align: left;
+			}
+			a {
+				padding-left: 0px;
+				margin: 20px auto;
+			}
 		}
 		h2, h4, p {
 			margin-bottom: 0px;
@@ -92,5 +106,28 @@ $baby-bear: 650px;
 			padding: 5px 0;
 			text-indent: 0;
 		}
+		.app-logo {
+			display: block;
+			margin: 15px;
+			width: 100%;
+			height: auto !important;
+		}
+		.store-button {
+			display: inline-block;
+			float: left;
+			margin: 0 15px 15px;
+			margin-right: 0px;
+			width: 40%;
+			height: auto !important;
+		}
+
+	}
+}
+
+@media screen and (max-width: $papa-bear ) {
+	.contact {
+		float: none !important;
+		clear: both;
+		width: 100% !important;
 	}
 }
