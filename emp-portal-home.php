@@ -15,7 +15,6 @@
 		<div class="content-wrap">
 
 			<div class="page-content">
-
 				
 				<div class="emp-sidebar">
 					
@@ -32,13 +31,13 @@
 
 						?>
 
-						<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+						<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 							<li>
 								<a href="<?php the_field( 'job_link' ); ?>" target="_blank"><?php the_field( 'jobs_title' ); ?>&nbsp;<br>- <?php the_field( 'job_location' ) ?></a>
 							</li>
 						
-						<?php endwhile; endif; wp_reset_postdata(); ?>
+						<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
 						</ul>
 
@@ -59,11 +58,11 @@
 
 							?>
 
-							<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+							<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 							
 							<li><a href="<?php the_field( 'document_link' ) ?>" target="_blank"><?php the_field( 'document_title' ) ?></a></li>
 
-							<?php endwhile; endif; wp_reset_postdata(); ?>
+							<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
 						</ul>
 					</section>
@@ -90,7 +89,7 @@
 								 $query = new WP_Query( $args );
 							?>
 
-							<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+							<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 								<div>
 
@@ -116,7 +115,7 @@
 
 								</div>
 
-							<?php endwhile; endif; wp_reset_postdata(); ?>
+							<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
 					</section>
 
@@ -137,7 +136,7 @@
 
 						?>
 
-						<?php if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+						<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 						<div class="contact">
 							<h4><?php the_field( 'title' ); ?></h4>
@@ -146,36 +145,26 @@
 								address: <?php the_field( 'address' ); ?></p>
 						</div>
 
-						<?php endwhile; endif; wp_reset_postdata(); ?>
+						<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
 						<div class="clear"></div>
 
 					</section>
 
-					<h2>Announcements</h2>
+					<?php the_content(); ?>
 
-						<p><?php the_content(); ?></p>
+					<?php endwhile; else : ?>
 
-						<?php endwhile; else : ?>
+					<p><?php _e( 'Sorry, no pages matched your criteria' ); ?></p>
+					
+					<?php endif; ?>
 
-						<p><?php _e( 'Sorry, no pages matched your criteria' ); ?></p>
-						
-						<?php endif; ?>
-
-					<h2>Newsletters</h2>
-
-						News letters and stuff
-
-				</div>
-
-				
+				</div>		
 
 			</div>
 
 		</div>
 
-<!-- 		<?php get_sidebar( 'about' ); ?>
- -->
 		<div class="clear"></div>
 
 	</div>

@@ -131,3 +131,11 @@ $baby-bear: 650px;
 		width: 100% !important;
 	}
 }
+
+@media screen and (max-width: $mama-bear ) {
+	.contact {
+		float: none !important;
+		clear: both;
+		width: 100% !important;
+	}
+}

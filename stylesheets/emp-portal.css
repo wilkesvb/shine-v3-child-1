@@ -111,3 +111,9 @@
     float: none !important;
     clear: both;
     width: 100% !important; } }
+@media screen and (max-width: 850px) {
+  /* line 136, ../sass/emp-portal.scss */
+  .contact {
+    float: none !important;
+    clear: both;
+    width: 100% !important; } }
