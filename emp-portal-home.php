@@ -16,110 +16,9 @@
 
 			<div class="page-content">
 				
-				<div class="emp-sidebar">
-					
-					<section>
-						<h4>HOT Jobs</h4>
-						<ul>
+				<?php get_template_part( 'emp-sidebar-left'); ?>
 
-						<?php 
-
-							$args = array(
-								'post_type' => 'featured_job'
-							);
-							$query = new WP_Query( $args );
-
-						?>
-
-						<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
-							<li>
-								<a href="<?php the_field( 'job_link' ); ?>" target="_blank"><?php the_field( 'jobs_title' ); ?>&nbsp;<br>- <?php the_field( 'job_location' ) ?></a>
-							</li>
-						
-						<?php endwhile; endif; endif; wp_reset_postdata(); ?>
-
-						</ul>
-
-						<a href="http://ejob.bz/ATS/CompanyPortal.do?refresh=true&companyGK=19638&portalGK=2891">More Listings &gt;</a>
-
-					</section>
-
-					<section>
-						<h4>Important Documents</h4>
-						<ul>
-
-							<?php 
-
-								$args = array(
-									'post_type' => 'emp-docs'
-								);
-								$query = new WP_Query( $args );
-
-							?>
-
-							<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-							
-							<li><a href="<?php the_field( 'document_link' ) ?>" target="_blank"><?php the_field( 'document_title' ) ?></a></li>
-
-							<?php endwhile; endif; endif; wp_reset_postdata(); ?>
-
-						</ul>
-					</section>
-
-				</div>
-
-				<div class="emp-sidebar right">
-
-					<section>
-						
-						<h4>Calendar</h4>
-
-					</section>
-
-					<section>
-
-						<h4>APP Downloads</h4>
-
-							<?php 
-
-								$args = array(
-									'post_type' => 'emp-apps'
-								);
-								 $query = new WP_Query( $args );
-							?>
-
-							<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
-
-								<div>
-
-									<?php 
-
-									$image = get_field('app_logo');
-
-									if( !empty($image) ): ?>
-
-									<div class="col-1-2"><img class="app-logo" src="<?php echo $image['url']; ?>" alt="<?php echo $image['alt']; ?>" /></div>
-
-									<?php endif; ?>
-
-									<div class="col-1-2"><h5><?php the_field( 'app_name' ) ?></h5></div>
-
-									<div class="clear"></div>
-
-									<a href="<?php the_field( 'app_store_link' ) ?>" target="_blank" ><img class="store-button" src="/wp-content/uploads/2016/04/App_Store_icon-1-copy.png" alt="Available on the App Store" /></a>
-
-									<a href="<?php the_field( 'google_play_link' ) ?>" target="_blank" ><img class="store-button" src="/wp-content/uploads/2016/04/google-store-badge.png" alt="Available on Google Play" /></a>
-
-									<div class="clear"></div>
-
-								</div>
-
-							<?php endwhile; endif; endif; wp_reset_postdata(); ?>
-
-					</section>
-
-				</div>
+				<?php get_template_part( 'emp-sidebar-right'); ?>
 
 				<div class="emp-center">
 					
@@ -159,7 +58,15 @@
 					
 					<?php endif; ?>
 
-				</div>		
+				</div>	
+
+				<div class="hide-mama">
+					
+				<?php get_template_part( 'emp-sidebar-left'); ?>
+
+				<?php get_template_part( 'emp-sidebar-right'); ?>
+
+				</div>	
 
 			</div>
 

@@ -124,6 +124,9 @@ $baby-bear: 650px;
 	}
 }
 
+.hide-mama {
+	display: none;
+}
 @media screen and (max-width: $papa-bear ) {
 	.contact {
 		float: none !important;
@@ -133,9 +136,21 @@ $baby-bear: 650px;
 }
 
 @media screen and (max-width: $mama-bear ) {
-	.contact {
-		float: none !important;
-		clear: both;
-		width: 100% !important;
+	.emp-sidebar {
+		display: none;
+	}
+	.hide-mama, .hide-mama > div.emp-sidebar {
+		display: block !important;
+	}
+	.emp-center {
+		width: 100%;
+		float: none;
+		margin: 0 !important;
+	}
+	.emp-sidebar {
+		float: left !important;
+		width: 50% !important;
+		padding-left: 20px !important;
+		padding-right: 20px !important;
 	}
 }
