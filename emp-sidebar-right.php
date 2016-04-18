@@ -1,12 +1,6 @@
 <div class="emp-sidebar right">
 
 	<section>
-		
-		<h4>Calendar</h4>
-
-	</section>
-
-	<section>
 
 		<h4>APP Downloads</h4>
 
