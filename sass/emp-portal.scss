@@ -191,7 +191,8 @@ $baby-bear: 650px;
 	.logged-in .emp-sidebar {
 		display: none !important;
 	}
-	.logged-in .hide-mama {
+	.logged-in .hide-mama, 
+	.logged-in .hide-mama .emp-sidebar {
 		display: block !important;
 	}
 	.emp-center {
