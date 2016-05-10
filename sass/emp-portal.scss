@@ -81,9 +81,6 @@ $baby-bear: 650px;
 			float: left;
 			width: 220px;
 			padding-right: 0px;
-			a {
-				padding-left: 15px;
-			}
 			ul {
 				margin: 0;
 				padding: 15px 15px;
@@ -112,7 +109,7 @@ $baby-bear: 650px;
 			}
 			h4 {
 				margin-top: 0px;
-				color: white;
+				color: $red;
 				text-transform: uppercase;
 				background: $yellow;
 			}
@@ -136,6 +133,9 @@ $baby-bear: 650px;
 			a {
 				padding-left: 0px;
 				margin: 20px auto;
+			}
+			.store-button {
+				padding-left: 0px !important;
 			}
 		}
 		h2, h4, p {
@@ -167,8 +167,7 @@ $baby-bear: 650px;
 		.store-button {
 			display: inline-block;
 			float: left;
-			margin: 0 15px 15px;
-			margin-right: 0px;
+			margin: 0 0 15px 15px;
 			width: 40%;
 			height: auto !important;
 		}
@@ -179,6 +178,7 @@ $baby-bear: 650px;
 .hide-mama {
 	display: none;
 }
+
 @media screen and (max-width: $papa-bear ) {
 	.contact {
 		float: none !important;

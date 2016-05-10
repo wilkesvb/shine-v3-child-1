@@ -1,6 +1,6 @@
 <section>
 
-	<h4>User CP</h4>
+	<h4>Log Out/Password Reset</h4>
 
 	<div>
 

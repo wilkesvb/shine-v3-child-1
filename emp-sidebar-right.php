@@ -4,4 +4,6 @@
 
 	<?php get_template_part( 'emp-user-cp' ); ?>
 
+	<?php get_template_part( 'emp-suggestion-box' ); ?>
+
 </div>

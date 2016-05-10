@@ -21,6 +21,6 @@
 
 	</ul>
 
-	<a href="http://ejob.bz/ATS/CompanyPortal.do?refresh=true&companyGK=19638&portalGK=2891">More Listings &gt;</a>
+	<a href="http://ejob.bz/ATS/CompanyPortal.do?refresh=true&companyGK=19638&portalGK=2891" target="_blank">More Listings &gt;</a>
 
 </section>
