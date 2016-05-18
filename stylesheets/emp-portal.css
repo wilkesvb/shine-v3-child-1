@@ -94,7 +94,8 @@
     .page-template-emp-portal-home.logged-in .page-content .emp-center h4 {
       margin-top: 0px;
       color: #b32018;
-      text-transform: uppercase;
+      /*				text-transform: uppercase;
+      */
       background: #ffc324; }
     /* line 116, ../sass/emp-portal.scss */
     .page-template-emp-portal-home.logged-in .page-content .emp-center .contact {

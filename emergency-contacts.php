@@ -26,9 +26,36 @@
 		?>
 
 
-	</a></br>
-		Email: <a href="mailto:<?php the_field( 'email' ); ?>"><?php the_field( 'email' ); ?></a></br>
-		Address: <?php the_field( 'address' ); ?></p>
+	</br>
+
+		<?php
+
+			if(get_field('website'))
+			{
+				echo 'Website: <a href="' . get_field('website') . '" target="_blank">' . get_field('website') . '</a></br>';
+			}
+
+		?>
+
+
+		<?php 
+			
+			if(get_field('email'))
+			{
+				echo 'Email: <a href="mailto:' . get_field( 'email' ) . '">' . get_field( 'email' ) . '</a></br>';
+			}
+
+		?>
+		
+		<?php
+
+			if(get_field('address'))
+			{
+				echo 'Address: ' . get_field('address');
+			}
+
+		?>
+		</p>
 
 </div>
 
