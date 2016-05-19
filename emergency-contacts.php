@@ -11,7 +11,7 @@
 
 <div class="contact">
 
-	<h4><?php the_field( 'title' ); ?></h4>
+	<h4><?php the_title(); ?></h4>
 
 	<p>Contact: <?php the_field( 'contact_name' ); ?></br>
 		Phone: <a href="tel://<?php the_field( 'area_code' ); ?><?php the_field( 'phone_first3' ); ?><?php the_field( 'phone_last4' ); ?>">(<?php the_field( 'area_code' ); ?>) <?php the_field( 'phone_first3' ); ?>-<?php the_field( 'phone_last4' ); ?></a>
@@ -20,19 +20,17 @@
 
 			if(get_field('extension_number'))
 			{
-				echo 'Ext. (' . get_field('extension_number') . ')';
+				echo 'Ext. (' . get_field('extension_number') . ')</br>';
 			}
 
 		?>
-
-
-	</br>
+	
 
 		<?php
 
 			if(get_field('website'))
 			{
-				echo 'Website: <a href="' . get_field('website') . '" target="_blank">' . get_field('website') . '</a></br>';
+				echo 'Website: <a href="http://' . get_field('website') . '" target="_blank">' . get_field('website') . '</a></br>';
 			}
 
 		?>

@@ -14,7 +14,7 @@
 	<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 
 		<li>
-			<a href="<?php the_field( 'job_link' ); ?>" target="_blank"><?php the_field( 'jobs_title' ); ?>&nbsp;<br>- <?php the_field( 'job_location' ) ?></a>
+			<a href="<?php the_field( 'job_link' ); ?>" target="_blank"><?php the_title(); ?>&nbsp;<br>- <?php the_field( 'job_location' ) ?></a>
 		</li>
 	
 	<?php endwhile; endif; endif; wp_reset_postdata(); ?>

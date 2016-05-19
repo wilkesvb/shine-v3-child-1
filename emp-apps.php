@@ -24,7 +24,7 @@
 
 	<?php endif; ?>
 
-		<div class="col-1-2"><h5><?php the_field( 'app_name' ) ?></h5></div>
+		<div class="col-1-2"><h5><?php the_title(); ?></h5></div>
 
 		<div class="clear"></div>
 
