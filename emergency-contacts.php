@@ -20,11 +20,12 @@
 
 			if(get_field('extension_number'))
 			{
-				echo 'Ext. (' . get_field('extension_number') . ')</br>';
+				echo 'Ext. (' . get_field('extension_number') . ')';
 			}
 
 		?>
-	
+		
+		</br>
 
 		<?php
 
