@@ -12,6 +12,10 @@
 
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
     <?php wp_head(); ?>
+    <?php if( !is_page_template( 'front-page.php' ) ) :?>
+         <link rel="stylesheet" href="<?php bloginfo('template_directory'); ?>/stylesheets/page.css" media="screen" type="text/css" />
+    <?php endif;?>
+
     <link rel="shortcut icon" href="<?php echo esc_url( get_template_directory_uri() ); ?>/favicon.ico" type="image/x-icon" />
     <meta property="og:image" content="/wp-content/uploads/2015/01/SHINE_LOGO_RGB420x209.jpg" />
 

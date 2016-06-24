@@ -131,8 +131,8 @@ $baby-bear: 650px;
 				text-align: left;
 			}
 			a {
-				padding-left: 0px;
-				margin: 20px auto;
+/*				padding-left: 0px;
+*/				margin: 20px auto;
 			}
 			.store-button {
 				padding-left: 0px !important;
@@ -226,6 +226,11 @@ $baby-bear: 650px;
 			margin-right: 0 !important;
 		}
 	}
+	.right {
+		.col-1-2 {
+
+		}
+	}
 }
 
 @media screen and (max-width: $baby-bear ) {
@@ -246,5 +251,8 @@ $baby-bear: 650px;
 			float: none;
 			margin: 0 auto !important;
 		}
+	}
+	.right a {
+		padding-left: 0px !important;
 	}
 }

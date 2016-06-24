@@ -13,14 +13,22 @@
 
 	<h4><?php the_title(); ?></h4>
 
-	<p>Contact: <?php the_field( 'contact_name' ); ?></br>
+	<p><?php 
+
+			if(get_field( 'contact_name' )) 
+			{ 
+				echo 'Contact: ' . get_field( 'contact_name' ) . '</br>'; 
+			} 
+
+		?>
+
 		Phone: <a href="tel://<?php the_field( 'area_code' ); ?><?php the_field( 'phone_first3' ); ?><?php the_field( 'phone_last4' ); ?>">(<?php the_field( 'area_code' ); ?>) <?php the_field( 'phone_first3' ); ?>-<?php the_field( 'phone_last4' ); ?></a>
 
 		<?php
 
 			if(get_field('extension_number'))
 			{
-				echo 'Ext. (' . get_field('extension_number') . ')';
+				echo get_field('extension_number');
 			}
 
 		?>
@@ -54,7 +62,7 @@
 			}
 
 		?>
-		</p>
+	</p>
 
 </div>
 

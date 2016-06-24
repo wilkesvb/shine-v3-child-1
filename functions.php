@@ -20,14 +20,16 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
 // add_action( 'template_redirect', 'redirect_unlogged_in_user' );
 
 function redirect_logged_in_user() {
-	if ( is_user_logged_in() && is_page( 'portal-redirect' ) ) {
+	if ( is_user_logged_in() && is_page( 'portal' ) ) {
 	wp_redirect('/employees/');
 	exit;
-	} else if ( is_page( 'portal-redirect' ) ) {
+	} else if ( is_page( 'portal' ) ) {
 		wp_redirect('/membership-login/');
 		exit;
 	}
 }
-add_action( 'template_redirect', 'redirect_logged_in_user' );
+add_action( 'template_redirect' , 'redirect_logged_in_user' );
+
+
 
 ?>

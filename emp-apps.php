@@ -38,4 +38,15 @@
 
 	<?php endwhile; endif; endif; wp_reset_postdata(); ?>
 
+
+<div class="col-1-2">
+		
+	<a href="/wp-content/uploads/2016/06/Add_SHINE_to_iPhone_Home_Screen.pdf" target="_blank" ><img class="app-logo" src="/wp-content/uploads/2016/06/apple-touch-icon.png" alt="apple touch icon" /></a>
+
+</div>
+
+		<div class="col-1-2"><h5>iPhone Touch Icon</h5></div>
+
+		<a href="/wp-content/uploads/2016/06/Add_SHINE_to_iPhone_Home_Screen.pdf" target="_blank" >Click for Instructions ></a>
+
 </section>		
