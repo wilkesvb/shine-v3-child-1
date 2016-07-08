@@ -166,8 +166,11 @@ $baby-bear: 650px;
 			display: block;
 			margin: 15px;
 			width: 100%;
-			max-width: 90px;
 			height: auto !important;
+		}
+
+		.app-logo {
+			max-width: 90px;
 		}
 		.store-button {
 			display: inline-block;
@@ -175,6 +178,13 @@ $baby-bear: 650px;
 			margin: 0 0 15px 15px;
 			width: 40%;
 			height: auto !important;
+		}
+		.culture-calendar {
+			margin: 15px 15px 0px;
+			img {
+				max-width: 100%;
+				height: auto !important;
+			}
 		}
 	}
 	section > a {

@@ -150,86 +150,95 @@
     display: block;
     margin: 15px;
     width: 100%;
-    max-width: 90px;
     height: auto !important; }
   /* line 172, ../sass/emp-portal.scss */
+  .page-template-emp-portal-home.logged-in .page-content .app-logo {
+    max-width: 90px; }
+  /* line 175, ../sass/emp-portal.scss */
   .page-template-emp-portal-home.logged-in .page-content .store-button {
     display: inline-block;
     float: left;
     margin: 0 0 15px 15px;
     width: 40%;
     height: auto !important; }
-/* line 180, ../sass/emp-portal.scss */
+  /* line 182, ../sass/emp-portal.scss */
+  .page-template-emp-portal-home.logged-in .page-content .culture-calendar {
+    margin: 15px 15px 0px; }
+    /* line 184, ../sass/emp-portal.scss */
+    .page-template-emp-portal-home.logged-in .page-content .culture-calendar img {
+      max-width: 100%;
+      height: auto !important; }
+/* line 190, ../sass/emp-portal.scss */
 .page-template-emp-portal-home.logged-in section > a {
   padding-left: 15px; }
 
-/* line 185, ../sass/emp-portal.scss */
+/* line 195, ../sass/emp-portal.scss */
 .hide-mama {
   display: none; }
 
 @media screen and (max-width: 1050px) {
-  /* line 190, ../sass/emp-portal.scss */
+  /* line 200, ../sass/emp-portal.scss */
   .contact {
     float: none !important;
     clear: both;
     width: 100% !important; } }
 @media screen and (max-width: 850px) {
-  /* line 198, ../sass/emp-portal.scss */
+  /* line 208, ../sass/emp-portal.scss */
   .logged-in .emp-sidebar {
     display: none !important; }
 
-  /* line 202, ../sass/emp-portal.scss */
+  /* line 212, ../sass/emp-portal.scss */
   .logged-in .hide-mama,
   .logged-in .hide-mama .emp-sidebar {
     display: block !important; }
 
-  /* line 205, ../sass/emp-portal.scss */
+  /* line 215, ../sass/emp-portal.scss */
   .emp-center {
     width: 100%;
     float: none;
     margin: 0 !important; }
 
-  /* line 210, ../sass/emp-portal.scss */
+  /* line 220, ../sass/emp-portal.scss */
   .emp-sidebar {
     float: left !important;
     width: 50% !important;
     padding-left: 20px !important;
     padding-right: 20px !important; }
-    /* line 215, ../sass/emp-portal.scss */
+    /* line 225, ../sass/emp-portal.scss */
     .emp-sidebar .app-logo {
       max-width: 120px !important; }
 
-  /* line 219, ../sass/emp-portal.scss */
+  /* line 229, ../sass/emp-portal.scss */
   .contact {
     float: left !important;
     clear: none;
     width: 48% !important;
     margin: 0 4% 20px 0 !important;
     background: #e1e1e1; }
-    /* line 225, ../sass/emp-portal.scss */
+    /* line 235, ../sass/emp-portal.scss */
     .contact:nth-of-type(even) {
       margin-right: 0 !important; } }
 @media screen and (max-width: 650px) {
-  /* line 237, ../sass/emp-portal.scss */
+  /* line 247, ../sass/emp-portal.scss */
   .contact {
     float: none !important;
     clear: both;
     width: 100% !important; }
 
-  /* line 242, ../sass/emp-portal.scss */
+  /* line 252, ../sass/emp-portal.scss */
   .emp-sidebar {
     float: none !important;
     margin-left: auto;
     margin-right: auto;
     width: 100% !important; }
-    /* line 247, ../sass/emp-portal.scss */
+    /* line 257, ../sass/emp-portal.scss */
     .emp-sidebar h5 {
       text-align: center !important; }
-    /* line 250, ../sass/emp-portal.scss */
+    /* line 260, ../sass/emp-portal.scss */
     .emp-sidebar .app-logo, .emp-sidebar img {
       float: none;
       margin: 0 auto !important; }
 
-  /* line 255, ../sass/emp-portal.scss */
+  /* line 265, ../sass/emp-portal.scss */
   .right a {
     padding-left: 0px !important; } }

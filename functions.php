@@ -30,6 +30,4 @@ function redirect_logged_in_user() {
 }
 add_action( 'template_redirect' , 'redirect_logged_in_user' );
 
-
-
 ?>
