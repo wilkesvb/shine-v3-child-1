@@ -13,7 +13,7 @@
 
 		?>
 
-		<?php if( is_user_logged_in() ) : if( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
+		<?php if ( is_user_logged_in() ) : if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
 		
 		<a href="<?php the_field( 'calendar-attachment' ); ?>" target="blank"><?php the_post_thumbnail('medium'); ?></a>
 
