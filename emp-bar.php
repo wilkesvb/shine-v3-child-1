@@ -8,7 +8,7 @@
                 <?php global $current_user;
                   wp_get_current_user();
 
-                  echo 'Hello, ' . $current_user->user_login . "\n"; ?>
+                  echo 'Hello, ' . $current_user->first_name . "\n"; ?>
 
             </span>
         </td>

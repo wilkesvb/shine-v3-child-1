@@ -2,7 +2,7 @@
 
 function child_theme_styles() {  /*wpt is for name spacing, unique so it doesn't conflict with other functions or theme calls*/
 	
-	$emppages = array( 'employees', 'membership-login', 'password-reset');
+	$emppages = array( 'employees', 'membership-login', 'password-reset', 'membership-registration');
 
 	if ( is_page( $emppages ) ) {
 		wp_enqueue_style( 'emp-portal_css', get_stylesheet_directory_uri() . '/stylesheets/emp-portal.css' );
@@ -20,7 +20,10 @@ add_action( 'wp_enqueue_scripts', 'child_theme_styles' );
 // add_action( 'template_redirect', 'redirect_unlogged_in_user' );
 
 function redirect_logged_in_user() {
-	if ( is_user_logged_in() && is_page( 'portal' ) ) {
+
+	$page_redirect = array( 'portal', 'membership-login' );
+
+	if ( is_user_logged_in() && is_page( $page_redirect ) ) {
 	wp_redirect('/employees/');
 
 	exit;

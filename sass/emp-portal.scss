@@ -14,14 +14,17 @@ $baby-bear: 650px;
 
 
 /*Log In Page*/
-
+.page-id-7119 label,
 .page-id-7120 label[class*="swpm"],
-.page-id-7122 label[class*="swpm"]
+.page-id-7122 label[class*="swpm"], 
  {
 	font-size: .8em;
 	line-height: 1.5em;
 }
 
+.page-id-7119 input, 
+.page-id-7119 textarea,
+.page-id-7119 select,
 .page-id-7120 input, 
 .page-id-7120 textarea,
 .page-id-7120 select,
@@ -33,6 +36,7 @@ $baby-bear: 650px;
 	border: 1px solid $medgray;
 }
 
+.page-id-7119 input[type="submit"],
 .page-id-7120 input[type="submit"],
 .page-id-7122 input[type="submit"] {
 	display: inline-block;
